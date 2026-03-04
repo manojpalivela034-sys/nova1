@@ -8,7 +8,7 @@ body{
 
 h2{
     text-align: center;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-bottom: 30px;
     font-size: 26px;
 }
@@ -19,8 +19,31 @@ h2{
 .header{
     background: #171f66;
 }
+.sub{
+    margin-top: 0px;
+}
 .row{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.phone-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+.sales-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0px;
+    justify-items: center;
+    align-items: center;
+}
+.product-row{
+    display:flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -52,7 +75,7 @@ h2{
 }
 .card p{
     margin-top: 0px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 .card-data{
     background: #faf9f9;
@@ -62,9 +85,13 @@ h2{
 .card-data p{
     color: #484848;
 }
-.card-data h3{
+.card-data h3 a{
     font-size: 20px;
     margin-bottom: 8px;
+    text-decoration: none;
+    padding: 0px;
+    color: #000000;
+    background: none;
 }
 .price p {
     color:#000000;
@@ -83,7 +110,7 @@ h2{
 }
 .mrp{
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 .card img{
 padding: 14px;
@@ -115,7 +142,6 @@ padding: 14px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .col img{
-    width: 186px;
     margin-top: 45px;
     border-radius: 100px;
     border: 1px solid #f1f1f1;
@@ -124,7 +150,10 @@ padding: 14px;
     font-weight: 500;
     margin-bottom: 60px;
 }
-
+.offer-head h3 a{
+    text-decoration: none;
+    color: #000000;
+}
 .pops{
     display: flex;
 }
@@ -176,6 +205,13 @@ padding: 14px;
 .box h3{
     font-size: 22px;
 }
+.box h3 a{
+    text-decoration: none;
+    color: #000000;
+    padding: 0px;
+    background: none;
+    box-shadow: none;
+}
 .data-text a{
     background: #feef00;
     padding: 10px 15px;
@@ -184,6 +220,17 @@ padding: 14px;
     text-decoration: none;
     box-shadow: inset 0px 10px 6px -6px rgba(0,0,0,0.26);
     
+}
+.data-text h3 a{
+    padding: 0px;
+    background: none;
+    box-shadow: none;
+}
+.big-card{
+    padding: 0px;
+    background: none;
+    box-shadow: none;
+    margin-top:12px;
 }
 .data-text h3{
     margin-bottom: 0px;
@@ -319,7 +366,12 @@ padding: 14px;
     margin:0px 5px;
 }
 .media{
-    margin: 0px 20px;
+    margin: 0px;
+    display: flex;
+    margin-left: 10px;
+}
+.media a{
+    margin:0px 5px
 }
 .footer-nav{
     margin-right:50px
@@ -494,8 +546,184 @@ nav>a {
 input[type="checkbox"] {
   display: none;
 }
-
-
+/* STORE PAGE */
+.square img{
+    margin: 12px 34px;
+}
+.square{
+    background: #d6ecfa;
+    border-radius: 100%;
+    width:170px;
+    height:170px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.square h4{
+    margin-top: 0px;
+}
+.square a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+.store-section{
+    margin:50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.product-banners img{
+    border-radius: 20px;
+    margin:10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.product-banners{
+    text-align: center;
+}
+.bg3{
+    background: #eeeeee;
+    padding: 50px;
+}
+sub{
+    margin:0px 0px 20px 0px;
+}
+.mobile-card img{
+    width:170px;
+}
+.mobile-card{
+    background: #f8f8f8;
+    padding: 20px 90px;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+    margin:25px 0px;
+}
+.mobile-card h3 a{
+    text-decoration: none;
+    color: #000000;
+}
+.rate p{
+    margin-bottom: 0px;
+    color: #c90202;
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+.strike p{
+    margin-bottom: 0px;
+    color:#757575;
+}
+.mobile-cards{
+    padding-bottom: 50px;
+}
+.access-card{
+    display: flex;
+    align-items:center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px;
+}
+.access-card img{
+    margin-right: 40px;
+}
+.card-mrp{
+    display: flex;
+    align-items: baseline;
+    margin-top: 100px;
+}
+.access-body{
+    text-align: center;
+}
+.access-body h3 a{
+    text-decoration: none;
+    color: #000000;
+}
+.phone-card{
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin:15px; 
+}
+.phone-info{
+    display: flex;
+    justify-content: space-between;
+    align-items:last baseline
+}
+.phone-body h2{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.phone-body h2 a{
+    text-decoration: none;
+    color: #000000;
+}
+.phone-body p{
+    font-weight: 500;
+}
+.top-series{
+    text-align: center;
+    background: #ffffff;
+    padding: 20px 35px;
+    border-radius: 10px;
+}
+.series{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap:30px;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    
+}
+.top-series h3 a{
+    text-decoration: none;
+    color: #000000;
+}
+.phone h3 a{
+    text-decoration: none;
+    color: #ffffff;
+    background: #171f66;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+.phone h3{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+.btn{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px
+}
+.btn a{
+    text-decoration: none;
+    color: #ffffff;
+    background: #171f66;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+.store-btn{
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+.store-btn a{
+    text-decoration: none;
+    color: #ffffff;
+    background: #171f66;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+.phone-body a{
+    text-decoration: none;
+    color: #000000;
+    border-bottom: 1px solid #000000;
+    margin-left:auto
+}
 @media screen and (min-width: 769px) {
     .nav-link a:hover::after {
         width: 100%;
@@ -576,13 +804,25 @@ input[type="checkbox"] {
         padding: 10px;
     }
     .section{
-        margin:0px 10px;
+        margin:12px;
+        padding:20px 10px;
     }
     .pops,
     .row,
     .footer-list,
-    .footer{
+    .footer,
+    .access-card,
+    .store-section,
+    .sales-row,
+    .product-row,
+    .phone-info
+    {
         flex-wrap: wrap;
+    }
+    .phone-grid{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap:0px;
     }
     .menu-toggle{
         display:block;
@@ -592,10 +832,14 @@ input[type="checkbox"] {
         padding: 14px;
     }
     .brand{
+        margin-top: 0px;
         margin-bottom: 0px;
     }
     .large-data img{
         
+    }
+    .sales-row{
+        justify-content: center;
     }
     .box3{
         justify-content: center;
@@ -636,16 +880,80 @@ input[type="checkbox"] {
         padding: 5px;
         margin:15px 0px
     }
+    .product-banners img{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .bg3{
+        padding: 5px;
+    }
+    .access-card img{
+        margin:0px;
+    }
+    .access-card{
+        align-items: center;
+        justify-content: center;
+        padding: 10px 65px;
+        margin: 10px;
+    }
+    .mobile-card{
+        margin:10px 0px;
+        padding: 20px 65px;
+    }
+    .access-body{
+        margin-left: 25px;
+    }
+    .card-mrp{
+        margin-top: 50px;
+    }
+    .square{
+        margin:10px
+    }
+    .product-row{
+        justify-content: center;
+    }
+    .sales-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin: 10px;
+    }
+    .card-mrp{
+        justify-content: center;
+    }
+    .phone-card img{
+        width:100%
+    }
+    .phone-card{
+        margin:12px;
+    }
+    .series{
+        grid-template-columns: 1fr 1fr;
+        gap:0px
+    }
+    .accessories{
+        padding-bottom: 50px;
+    }
+    .sub{
+        margin-top: 40px;
+    }
+    .top-series{
+        padding: 8px 14px;
+        margin:5px 5px;
+    }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
         .cards{
+        grid-template-columns: 1fr 1fr;
+    
+    }
+    .sales-grid{
         grid-template-columns: 1fr 1fr;
     }
     .container{
         width: 100%;
     }
     .section{
-        margin:0px 10px
+        margin:15px;    
     }
     .large-data img{
         width: 292px;
@@ -681,5 +989,31 @@ input[type="checkbox"] {
     .data-text p{
         margin:0px;
         padding: 20px 0px;
+    }
+    .product-banners img{
+        width: 100%;
+    }
+    .mobile-card{
+        padding:20px 60px;
+        margin:25px 0px;
+    }
+    .access-card{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .access-card img{
+        margin: 0px;
+    }
+    .card-mrp{
+        justify-content: center;
+    }
+    .phone-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .series{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        padding-bottom: 0px;
     }
 }
